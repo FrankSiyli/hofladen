@@ -3,21 +3,9 @@ import React from "react";
 const ClosingAtom = () => {
   return (
     <>
-      <div className="relative flex flex-col items-center">
-        <div className="absolute x-rotation h-7 w-7 border border-appOrange rounded-xl">
-          <span className="absolute top-0 left-0.5 border border-appOrange w-1 h-1 rounded-full bg-appOrange"></span>
-          <span className="absolute bottom-0 right-0.5 border border-appOrange w-1 h-1 rounded-full bg-appOrange"></span>
-        </div>
-        <div className="absolute y-rotation h-7 w-7 flex justify-between items-center border border-appOrange rounded-xl">
-          <span className="absolute top-0 left-0.5 border border-appOrange w-1 h-1 rounded-full bg-appOrange"></span>
-          <span className="absolute bottom-0 right-0.5 border border-appOrange w-1 h-1 rounded-full bg-appOrange"></span>
-        </div>
-        <div className="absolute z-rotation h-7 w-7 border border-appOrange rounded-xl">
-          <span className="absolute top-0 left-0.5 border border-appOrange w-1 h-1 rounded-full bg-appOrange"></span>
-          <span className="absolute bottom-0 right-0.5 border border-appOrange w-1 h-1 rounded-full bg-appOrange"></span>
-        </div>
-        <div className="absolute h-0.1 w-5 top-3.5 rotate-45 border rounded-full border-black dark:border-neutral-300"></div>
-        <div className="absolute h-0.1 w-5 top-3.5 -rotate-45 border rounded-full border-black dark:border-neutral-300"></div>
+      <div className="relative flex flex-col w-10 h-10 items-center hover:scale-105 hover:rotate-3 transform transition-transform duration-100">
+        <div className="absolute h-0.1 w-7 top-3.5 rotate-45 border rounded-full border-appBlue"></div>
+        <div className="absolute h-0.1 w-7 top-3.5 -rotate-45 border rounded-full border-appBlue"></div>
       </div>
     </>
   );

@@ -17,7 +17,7 @@ const Logo = () => {
       alt="logo"
       quality={100}
       priority
-      width={200}
+      width={400}
       height={200}
       onClick={handleLogoClick}
     />

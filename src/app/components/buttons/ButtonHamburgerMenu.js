@@ -2,21 +2,24 @@ import React from "react";
 
 const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
   return (
-    <span onClick={handleClick} className="relative mr-5 cursor-pointer">
+    <span
+      onClick={handleClick}
+      className="fixed right-3 top-3 md:right-10 md:top-10 cursor-pointer hover:scale-105 transform transition-transform duration-100"
+    >
       <div
-        className={`w-7 border border-appBlue dark:border-white transform transition-all duration-1000 ${
+        className={`w-8 border border-appBlue transform transition-all duration-1000 ${
           secondProp ? "rotate-45 translate-y-2.5 opacity-0" : ""
         }`}
       ></div>
 
       <div
-        className={`w-5 my-2 ml-2 border border-appOrange transform transition-all duration-700 ${
+        className={`w-6 my-2 ml-2 border border-appBlue transform transition-all duration-700 ${
           secondProp ? "-translate-x-[3000px] w-40" : ""
         }`}
       ></div>
 
       <div
-        className={`w-7 border border-appBlue dark:border-white transform transition-all duration-1000 ${
+        className={`w-8 border border-appBlue transform transition-all duration-1000 ${
           secondProp ? "-rotate-45 -translate-y-2.5 opacity-0" : ""
         }`}
       ></div>

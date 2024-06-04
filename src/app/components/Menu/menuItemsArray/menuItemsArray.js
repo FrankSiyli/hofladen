@@ -1,12 +1,12 @@
 const menuItemsArray = [
   {
-    title: "foo",
+    title: "Tortenbestellungen",
   },
   {
-    title: "bar",
+    title: "Das Café",
   },
   {
-    title: "baz",
+    title: "Veranstaltungen",
   },
 ];
 

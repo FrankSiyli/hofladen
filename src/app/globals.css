@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --appBlue: #161c47;
-  --appGrey: #aeadad;
+  --appBlue: #013f8b;
+  --appGrey: #f1f1f1;
+  --appText: #746378;
 }
 
 * {
@@ -17,7 +18,7 @@
 }
 
 body {
-  background-image: url("/4.png");
+  background-image: url("/background_2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
