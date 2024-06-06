@@ -2,6 +2,7 @@ import ArrowRightSvg from "@/app/svgCollection/ArrowRightSvg";
 import React, { forwardRef, useEffect, useState } from "react";
 import menuItemsArray from "./menuItemsArray/menuItemsArray";
 import ClosingAtom from "./components/ClosingAtom";
+import Link from "next/link";
 
 const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
   const [loaded, setLoaded] = useState(false);
@@ -11,14 +12,14 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
     <div
       className={`${
         showMenu
-          ? "fixed top-0 right-0 w-full h-full shadow-2xl z-10 bg-neutral-800/30"
+          ? "fixed top-0 right-0 w-full h-full shadow-2xl z-20 bg-neutral-800/30"
           : ""
       }`}
     >
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-1 right-1 bottom-1 text-sm xl:text-xl w-80 p-5 bg-appGrey border border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-1 right-1 bottom-1  md:text-xl w-80 p-5 bg-appGrey border-2 border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  bg-appGrey duration-100`}
         >
@@ -31,15 +32,16 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
 
           <span className="fixed left-0 right-0 flex flex-col w-80">
             {menuItemsArray.map((menuItem, menuItemIndex) => (
-              <div
+              <Link
+              href={menuItem.link}
                 key={menuItemIndex}
-                className="flex justify-between items-center m-1 text-appText cursor-pointer border-b"
+                className="flex justify-between items-center m-1 text-appBlue cursor-pointer border-b"
               >
                 <p className="ml-2">{menuItem.title}</p>
                 <span className="scale-75">
                   <ArrowRightSvg />
                 </span>
-              </div>
+              </Link>
             ))}
           </span>
           <div className="fixed bottom-1 xl:bottom-10 left-2 w-72 m-2 p-2  text-appText">

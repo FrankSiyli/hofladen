@@ -1,25 +1,16 @@
-import { useRecoilState } from "recoil";
-import { activeComponentState } from "../recoil/atoms/activeComponentState";
 
-const ArrowLeftSvg = ({ setActiveComponentByArrow }) => {
-  const [, setActiveComponent] = useRecoilState(activeComponentState);
-
-  const handleButtonClick = () => {
-    setActiveComponent(setActiveComponentByArrow);
-  };
+const ArrowLeftSvg = () => {
 
   return (
     <div
-      className="fixed left-5 lg:left-20 top-28 backdrop-blur-3xl rounded border-2 border-white dark:border-[#1c1c1c]"
-      onClick={handleButtonClick}
-    >
+      className="fixed left-5 top-5 bg-appGrey rounded border border-appBlue bg-opacity-90 text-appText z-30"    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-9 h-9 cursor-pointer hover:scale-105 hover:text-appOrange transform transition-all duration-300"
+        className="w-10 h-10 cursor-pointer hover:scale-105 hover:text-appOrange transform transition-all duration-300"
       >
         <path
           strokeLinecap="round"

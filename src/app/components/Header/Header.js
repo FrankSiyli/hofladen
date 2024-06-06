@@ -1,10 +1,9 @@
 "use client";
 import React, { useEffect, useRef, useState, forwardRef } from "react";
-import Menu from "./Menu/Menu";
-import Logo from "./Logo/Logo";
-import ButtonHamburgerMenu from "./buttons/ButtonHamburgerMenu";
-import { useRecoilState } from "recoil";
-import Footer from "./Footer";
+import Menu from "../Menu/Menu";
+import Logo from "../Logo/Logo";
+import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
+import Footer from "../Footer/Footer";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -43,7 +42,7 @@ const Header = () => {
         showMenu={showMenu}
         handleMenuClick={handleMenuClick}
       />
-      <Footer/>
+      <Footer />
     </>
   );
 };

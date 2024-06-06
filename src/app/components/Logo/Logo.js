@@ -12,7 +12,7 @@ const Logo = () => {
 
   return (
     <Image
-      className="w-auto h-full p-1"
+      className="w-auto h-24 md:h-full p-1"
       src="/logo.png"
       alt="logo"
       quality={100}

@@ -9,7 +9,7 @@ const ResponsiveGallery = ({ images }) => {
         {images.map((src, index) => (
           <div
             key={index}
-            className="w-full h-64 flex items-center justify-center relative"
+            className="w-full h-64 flex items-center justify-center relative shadow-md z-10"
           >
             <Image
               src={src}
