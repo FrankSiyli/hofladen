@@ -19,7 +19,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-1 right-1 bottom-1  md:text-xl w-80 p-5 bg-appGrey border-2 border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-1 right-1 bottom-1  md:text-xl w-64 p-5 bg-appGrey border-2 border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  bg-appGrey duration-100`}
         >
@@ -30,12 +30,12 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
             <ClosingAtom />
           </span>
 
-          <span className="fixed left-0 right-0 flex flex-col w-80">
+          <span className="fixed left-0 right-0 flex flex-col w-64">
             {menuItemsArray.map((menuItem, menuItemIndex) => (
               <Link
               href={menuItem.link}
                 key={menuItemIndex}
-                className="flex justify-between items-center m-1 text-appBlue cursor-pointer border-b"
+                className="flex justify-between items-center m-1 text-appBlue cursor-pointer hover:scale-105 hover:shadow transform transition-transform duration-100"
               >
                 <p className="ml-2">{menuItem.title}</p>
                 <span className="scale-75">
