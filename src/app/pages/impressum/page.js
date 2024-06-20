@@ -7,8 +7,8 @@ const page = () => {
   return (
     <>
         <Link href="/"><ArrowLeftSvg/></Link>
-      <div className='mt-32 flex flex-col text-center justify-center border m-5 bg-appGrey/70 p-5 rounded-sm  text-appBlue'>
-      <h2 className='text-2xl'>Impressum</h2>
+      <div className='mt-32 py-20 px-2 flex flex-col justify-center border m-5 bg-appGrey/70 rounded-sm  text-appBlue'>
+      <h2 className='mb-20 text-2xl'>Impressum</h2>
 
 <h2>Angaben gemäß § 5 TMG:</h2>
 <p>Hofwiesen-Cafe<br/>Yvonne Stampniok</p>

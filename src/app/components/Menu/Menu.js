@@ -19,7 +19,7 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-1 right-1 bottom-1  md:text-xl w-64 p-5 bg-appGrey border-2 border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
+          className={`fixed top-1 right-1 bottom-1 w-64 p-5 bg-appGrey border-2 border-appBlue/50 rounded flex flex-col justify-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  bg-appGrey duration-100`}
         >
@@ -30,29 +30,34 @@ const Menu = forwardRef(({ showMenu, handleMenuClick }, ref) => {
             <ClosingAtom />
           </span>
 
-          <span className="fixed left-0 right-0 flex flex-col w-64">
+          <div className="fixed top-10 md:top-28 left-0 w-full  p-2  text-appText">
+            <p className="text-appBlue ">Anschrift:</p>
+            <p>Zu den Hofwiesen 3</p>
+            <p>19075 Warsow</p>
+            <p className="text-appBlue mt-3">Öffnungszeiten:</p>
+            <p>Sa + So</p>
+            <p>13-18 Uhr</p>
+            <p className="text-appBlue mt-3">Tel.:</p>
+            <p>0173/8284585</p>
+            <p className="text-appBlue mt-3">Email:</p>
+            <a className="underline" href="hofwiesen-cafe@gmx.de">hofwiesen-cafe@gmx.de</a>
+          <span className="mt-20 flex flex-col w-full">
             {menuItemsArray.map((menuItem, menuItemIndex) => (
               <Link
               href={menuItem.link}
                 key={menuItemIndex}
-                className="flex justify-between items-center m-1 text-appBlue cursor-pointer hover:scale-105 hover:shadow transform transition-transform duration-100"
+                className="flex justify-between items-center my-1 border-b border-t text-appBlue cursor-pointer hover:scale-105 shadow transform transition-transform duration-100"
               >
-                <p className="ml-2">{menuItem.title}</p>
+                <p className="m-2">{menuItem.title}</p>
                 <span className="scale-75">
                   <ArrowRightSvg />
                 </span>
               </Link>
             ))}
           </span>
-          <div className="fixed bottom-1 xl:bottom-10 left-2 w-72 m-2 p-2  text-appText">
-            <p className="text-appBlue text-2xl">Wo:</p>
-            <p>Zu den Hofwiesen 3</p>
-            <p>19075 Warsow</p>
-            <br></br>
-            <p className="text-appBlue text-2xl">Wann:</p>
-            <p>Sa + So</p>
-            <p>13-18 Uhr</p>
           </div>
+
+          
         </div>
       ) : null}
     </div>

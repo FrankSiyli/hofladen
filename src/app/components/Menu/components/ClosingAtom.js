@@ -3,7 +3,7 @@ import React from "react";
 const ClosingAtom = () => {
   return (
     <>
-      <div className="relative flex flex-col justify-center items-center w-10 h-10 shadow hover:shadow-xl rounded-full transform transition-transform duration-300">
+      <div className="relative flex flex-col justify-center items-center w-10 h-10 shadow hover:scale-105 rounded-full transform transition-transform duration-300">
         <div className="w-7  rotate-45 border rounded-full border-appBlue"></div>
         <div className="w-7  -rotate-45 border rounded-full border-appBlue"></div>
       </div>

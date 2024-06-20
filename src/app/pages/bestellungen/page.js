@@ -13,7 +13,6 @@ const imageUrls = [
   "/bestellungen/12.png",
   "/bestellungen/13.png",
   "/bestellungen/14.png",
-  "/bestellungen/15.png",
 ];
 
 const page = () => {

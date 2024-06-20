@@ -3,14 +3,14 @@ const ArrowLeftSvg = () => {
 
   return (
     <div
-      className="fixed left-5 top-5 bg-appBlue/90 rounded shadow-md bg-opacity-90 text-appGrey z-30"    >
+      className="fixed left-5 top-5 bg-appText/90 rounded shadow-xl bg-opacity-90 text-appGrey z-30 hover:scale-105 cursor-pointer transform transition-all duration-300"    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-10 h-10 cursor-pointer hover:scale-105 transform transition-all duration-300"
+        className="w-10 h-10 "
       >
         <path
           strokeLinecap="round"

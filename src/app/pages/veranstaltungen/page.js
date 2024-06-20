@@ -7,10 +7,6 @@ import Footer from "@/app/components/Footer/Footer";
 
 const imageUrls = [
   "/veranstaltungen/5.png",
-  "/veranstaltungen/5.png",
-  "/veranstaltungen/5.png",
-  "/veranstaltungen/5.png",
-  "/veranstaltungen/5.png",
 ];
 
 const page = () => {

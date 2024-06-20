@@ -7,8 +7,8 @@ const page = () => {
   return (
     <>
         <Link href="/"><ArrowLeftSvg/></Link>
-      <div className='mt-32 flex flex-col text-center justify-center border m-5 bg-appGrey/70 p-5 rounded-sm  text-appBlue'>
-      <h2 className='text-2xl'>Datenschutz</h2>
+      <div className='mt-32 py-20 px-2 flex flex-col justify-center border m-5 bg-appGrey/70 rounded-sm  text-appBlue'>
+      <h2 className='mb-20 text-2xl'>Datenschutz</h2>
 <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
 <p>Yvonne Stampniok</p>
 <h2>Ihre Betroffenenrechte</h2>
@@ -23,7 +23,7 @@ const page = () => {
 </ul>
 <p>Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen.</p>
 <p>Sie können sich jederzeit mit einer Beschwerde an eine Aufsichtsbehörde wenden, z. B. an die zuständige Aufsichtsbehörde des Bundeslands Ihres Wohnsitzes oder an die für uns als verantwortliche Stelle zuständige Behörde.</p>
-<p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" target="_blank" rel="noopener nofollow">https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html</a>.</p>
+<p>Eine Liste der Aufsichtsbehörden (für den nichtöffentlichen Bereich) mit Anschrift finden Sie unter: <a className='underline' href="https://www.bfdi.bund.de/DE/Service/Anschriften/Laender/Laender-node.html" target="_blank" rel="noopener nofollow">https://www.bfdi.bund.de</a>.</p>
 <p></p><h2>SSL-Verschlüsselung</h2>
 <p>Um die Sicherheit Ihrer Daten bei der Übertragung zu schützen, verwenden wir dem aktuellen Stand der Technik entsprechende Verschlüsselungsverfahren (z. B. SSL) über HTTPS.</p>
 <p></p><hr/>
@@ -38,7 +38,7 @@ const page = () => {
 <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen, z.B. bei der Einführung neuer Services. Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>
 <h2>Fragen an den Datenschutzbeauftragten</h2>
 <p>Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz verantwortliche Person in unserer Organisation:</p>
-Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für <a href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener" />externe Datenschutzbeauftragte (Version #2020-09-30).
+Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für <a className='underline' href="https://www.activemind.de/datenschutz/datenschutzbeauftragter/" target="_blank" rel="noopener"> externe Datenschutzbeauftragte </a> (Version #2020-09-30).
 
       </div>
     </>

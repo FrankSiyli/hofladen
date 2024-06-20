@@ -15,7 +15,7 @@ const imageUrls = [
   "/landingPage/10.png",
   "/landingPage/19.png",
   "/landingPage/2.png",
-  "/landingPage/hero.png",
+  "/landingPage/hero_2.png",
 ];
 
 export default function Home() {
