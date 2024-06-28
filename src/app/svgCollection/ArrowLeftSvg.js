@@ -3,7 +3,7 @@ const ArrowLeftSvg = () => {
 
   return (
     <div
-      className="fixed left-5 top-5 bg-appText/90 rounded shadow-xl bg-opacity-90 text-appGrey z-30 hover:scale-105 cursor-pointer transform transition-all duration-300"    >
+      className="fixed left-5 top-5 bg-appText/50 rounded shadow-xl bg-opacity-90 text-appGrey z-30 hover:scale-105 cursor-pointer transform transition-all duration-300"    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
