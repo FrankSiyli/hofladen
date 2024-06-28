@@ -15,7 +15,8 @@ const page = () => {
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <ResponsiveGallery images={imageUrls} />
+      <p className="text-center">folgt</p>
+      {/** <ResponsiveGallery images={imageUrls} /> */}
       <Footer />
     </div>
   );
