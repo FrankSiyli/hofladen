@@ -1,6 +1,6 @@
 "use client";
-import MobileSvg from "@/app/svgCollection/MobileSvg";
-import RotateSvg from "@/app/svgCollection/RotateSvg";
+import MobileSvg from "@/app/components/buttons/svgCollection/MobileSvg";
+import RotateSvg from "@/app/components/buttons/svgCollection/RotateSvg";
 import React, { useState, useEffect } from "react";
 
 const TurnYourDeviceOverlay = () => {

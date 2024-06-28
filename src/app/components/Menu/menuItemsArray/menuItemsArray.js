@@ -7,10 +7,10 @@ const menuItemsArray = [
     title: "Das Café",
     link: "pages/cafe"
   },
-  {
-    title: "Veranstaltungen",
-    link: "pages/veranstaltungen"
-  },
+  //{
+  //  title: "Veranstaltungen",
+  //  link: "pages/veranstaltungen"
+  // },
 ];
 
 export default menuItemsArray;
