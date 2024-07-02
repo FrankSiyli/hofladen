@@ -3,14 +3,14 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <>
+     <div className="flex min-h-screen w-full flex-col items-center">
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <div className="mt-32 py-20 px-2 flex flex-col justify-center border m-5 bg-appGrey/70 rounded-sm  text-appBlue">
-        <h2 className="mb-20 text-2xl">Datenschutz</h2>
+      <div className="mt-48 px-10 backdrop-blur-md backdropSafari rounded-xl mb-10">  <h2 className="mb-20 text-2xl">Datenschutz</h2>
         <p>
           Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
           EU-Datenschutzgrundverordnung (DSGVO), ist:
@@ -75,7 +75,7 @@ const page = () => {
           Verschlüsselungsverfahren (z. B. SSL) über HTTPS.
         </p>
         <p></p>
-        <hr />
+        
         <h2>Information über Ihr Widerspruchsrecht nach Art. 21 DSGVO</h2>
         <h3>Einzelfallbezogenes Widerspruchsrecht</h3>
         <p>
@@ -96,7 +96,6 @@ const page = () => {
         </p>
         <h3>Empfänger eines Widerspruchs</h3>
         <p>Yvonne Stampniok</p>
-        <hr />
         <h2>Änderung unserer Datenschutzbestimmungen</h2>
         <p>
           Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie
@@ -123,9 +122,9 @@ const page = () => {
           externe Datenschutzbeauftragte{" "}
         </a>{" "}
         (Version #2020-09-30).
-      </div>
+      </div></div>
     </>
   );
 };
 
-export default page;
+export default Page;

@@ -4,24 +4,22 @@ import Image from "next/image";
 
 const ResponsiveGallery = ({ images }) => {
   return (
-    <div className="container mx-auto p-1 mt-40 mb-40">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="flex flex-wrap h-auto items-center justify-center gap-4 p-1 my-20 mx-5">
         {images.map((src, index) => (
           <div
             key={index}
-            className="w-full h-64 flex items-center justify-center relative shadow-md z-10"
+            className="shadow-md z-10"
           >
             <Image
               src={src}
               alt={`Image ${index + 1}`}
-              fill
-              sizes="(min-width: 640px) 33.3vw, (min-width: 1024px) 33.3vw, 100vw"
-              style={{ objectFit: "cover", borderRadius: "5px" }}
+              width={300}
+              height={1}
+              className="object-cover h-60 w-72 rounded"
             />
           </div>
         ))}
       </div>
-    </div>
   );
 };
 

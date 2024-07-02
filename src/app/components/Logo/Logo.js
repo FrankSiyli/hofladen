@@ -12,13 +12,13 @@ const Logo = () => {
 
   return (
     <Image
-      className="w-auto h-24 md:h-full p-1"
+      className="w-auto md:h-24 h-16 z-30"
       src="/logo.png"
       alt="logo"
       quality={100}
       priority
-      width={400}
-      height={200}
+      width={200}
+      height={1}
       onClick={handleLogoClick}
     />
   );

@@ -3,13 +3,14 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <>
+       <div className="flex min-h-screen w-full flex-col items-center">
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <div className="mt-32 py-20 px-2 flex flex-col justify-center border m-5 bg-appGrey/70 rounded-sm  text-appBlue">
+      <div className="mt-48 px-10 backdrop-blur-md backdropSafari rounded-xl mb-10">
         <h2 className="mb-20 text-2xl">Impressum</h2>
 
         <h2>Angaben gemäß § 5 TMG:</h2>
@@ -81,8 +82,9 @@ const page = () => {
           </em>
         </p>
       </div>
+      </div>
     </>
   );
 };
 
-export default page;
+export default Page;

@@ -1,15 +1,15 @@
 const menuItemsArray = [
   {
     title: "Tortenbestellungen",
-    link: "pages/bestellungen"
+    link: "/bestellungen"
   },
   {
     title: "Das Café",
-    link: "pages/cafe"
+    link: "/cafe"
   },
   //{
   //  title: "Veranstaltungen",
-  //  link: "pages/veranstaltungen"
+  //  link: "/veranstaltungen"
   // },
 ];
 
