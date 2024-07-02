@@ -3,7 +3,6 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 import ResponsiveGallery from "@/app/components/ResponsiveGallery/ResponsiveGallery";
-import Footer from "@/app/components/Footer/Footer";
 import Text from "@/app/components/Text/Text";
 
 const imageUrls = [
