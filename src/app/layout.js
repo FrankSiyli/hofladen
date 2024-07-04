@@ -3,6 +3,8 @@ import "./globals.css";
 import RecoilRootWrapper from "./RecoilRootWrapper";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +25,8 @@ export default function RootLayout({ children }) {
         </RecoilRootWrapper>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-00V3L0ZYJB" />
+
     </html>
   );
 }
