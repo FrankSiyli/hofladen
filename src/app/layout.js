@@ -5,12 +5,14 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "hofwiesen-cafe.de",
   description: "hofwiesen-cafe Kothendorf ",
+  icons: {
+    icon: '/favicon.ico', 
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} font-sans bg-[url('/background.png')] bg-fill bg-fixed bg-center`}
       >
+        
         <RecoilRootWrapper>
           <Header />
           {children}
@@ -26,7 +29,6 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-00V3L0ZYJB" />
-
     </html>
   );
 }
