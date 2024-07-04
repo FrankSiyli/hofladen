@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState, forwardRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Menu from "../Menu/Menu";
 import Logo from "../Logo/Logo";
 import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
@@ -8,6 +8,8 @@ import { showMenuState } from "@/app/recoil/atoms/showMenuState";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const menuRef = useRef(null);
 
   useEffect(() => {
@@ -23,7 +25,28 @@ const Header = () => {
         document.removeEventListener("mousedown", handleClickOutside);
       };
     }
-  }, []);
+  }, [setShowMenu]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          setShowHeader(false);
+        } else {
+          setShowHeader(true);
+        }
+        setLastScrollY(currentScrollY);
+      }
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [lastScrollY]);
 
   const handleMenuClick = () => {
     setShowMenu(!showMenu);
@@ -31,7 +54,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="headerBackground fixed z-20 top-0 left-0 w-screen md:h-24 h-16 bg-appGrey/90 flex justify-center items-center shadow-xl ">
+      <div
+        className={`headerBackground fixed z-20 top-0 left-0 w-screen md:h-24 h-16 bg-appGrey/90 flex justify-center items-center shadow-xl transition-transform duration-300 ${
+          showHeader ? "transform translate-y-0" : "transform -translate-y-full"
+        }`}
+      >
         <Logo />
         <ButtonHamburgerMenu
           handleClick={handleMenuClick}

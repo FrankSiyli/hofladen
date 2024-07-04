@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ResponsiveGallery = ({ images }) => {
   return (
-    <div className="flex flex-wrap h-auto items-center justify-center gap-4 p-1 my-20 mx-5">
+    <div className="flex flex-wrap h-auto items-center justify-center gap-4 p-1 my-10 mx-5">
         {images.map((src, index) => (
           <div
             key={index}

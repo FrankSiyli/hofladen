@@ -19,7 +19,7 @@ const Footer = () => {
           hofwiesen-cafe@gmx.de
         </a>
       </div>
-      <div className="flex flex-col justify-center gap-2 mt-10 md:mt-0 text-appBlue underline">
+      <div className="flex flex-col justify-center gap-2 mt-10 md:mt-0 text-sm text-appBlue underline">
         <Link href="/impressum">Impressum</Link>
         <Link href="/datenschutz">Datenschutz</Link>
       </div>
