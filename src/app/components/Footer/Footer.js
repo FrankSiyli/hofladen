@@ -3,8 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" w-full p-5 flex flex-col text-center bg-appGrey/80">
-      <div className="h-40 flex justify-around">
+    <div className="w-full h-auto flex flex-col md:flex-row justify-between p-5 items-center  text-center bg-appGrey/50">
       <div >
         <p className="text-appBlue ">Anschrift:</p>
         <p>Zu den Hofwiesen 3</p>
@@ -14,17 +13,17 @@ const Footer = () => {
       </div>
       <div >
         <p className="text-appBlue">Telefon:</p>
-        <p>0173/8284585</p>
+        <p>0173 / 82 84 585</p>
         <p className="text-appBlue mt-3">Email:</p>
         <a className="underline" href="hofwiesen-cafe@gmx.de">
           hofwiesen-cafe@gmx.de
         </a>
-      </div></div>
-      <div className="flex justify-center gap-5 mt-10 text-appBlue underline">
+      </div>
+      <div className="flex flex-col justify-center gap-2 mt-10 md:mt-0 text-appBlue underline">
         <Link href="/impressum">Impressum</Link>
         <Link href="/datenschutz">Datenschutz</Link>
       </div>
-    </div>
+      </div>
   );
 };
 

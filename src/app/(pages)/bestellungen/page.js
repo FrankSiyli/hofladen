@@ -16,7 +16,7 @@ const imageUrls = [
 
 const Page = () => {
   return (
-    <>
+    <div className="min-h-screen">
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
@@ -29,7 +29,7 @@ const Page = () => {
       <div className="border opacity-50 m-1 max-w-[500px] mx-auto"></div>
       <Text textValue="Wir freuen uns darauf, Ihren besonderen Moment noch unvergesslicher zu machen." />
      
-      </div></>
+      </div></div>
   );
 };
 

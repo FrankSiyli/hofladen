@@ -6,11 +6,8 @@ import Text from "./components/Text/Text";
 
 const imageUrls = [
   "/landingPage/17.png",
-  "/landingPage/3.png",
   "/landingPage/13.png",
-  "/landingPage/7.png",
   "/landingPage/6.png",
-  "/landingPage/10.png",
   "/landingPage/19.png",
   "/landingPage/2.png",
 ];
