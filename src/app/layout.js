@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} font-sans bg-[url('/background.png')] bg-fill bg-fixed bg-center`}
+        className={`${inter.variable} font-sans bg-[url('../../public/images/background.png')] bg-fill bg-fixed bg-center`}
       >
         
         <RecoilRootWrapper>

@@ -5,11 +5,11 @@ import ResponsiveGallery from "./components/ResponsiveGallery/ResponsiveGallery"
 import Text from "./components/Text/Text";
 
 const imageUrls = [
-  "/landingPage/17.png",
-  "/landingPage/13.png",
-  "/landingPage/6.png",
-  "/landingPage/19.png",
-  "/landingPage/2.png",
+  "/images/17.png",
+  "/images/13.png",
+  "/images/6.png",
+  "/images/19.png",
+  "/images/2.png",
 ];
 
 export default function Home() {

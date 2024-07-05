@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import logo from "../../public/logo.png";
+import logo from "../../public/images/logo.png";
 import Image from "next/image";
 
 const NotFound = () => {
@@ -12,8 +12,8 @@ const NotFound = () => {
           src={logo}
           alt="logo"
           className="mx-auto"
-          width={200}
-          height={200}
+          width={300}
+          height={1}
         />
         <h2 className="my-10">uups... </h2>
         <p>
@@ -21,7 +21,7 @@ const NotFound = () => {
             className="text-xl underline decoration-appBlue underline-offset-2"
             href="/"
           >
-            Startseite
+            zurück zur Startseite
           </Link>
         </p>
       </div>

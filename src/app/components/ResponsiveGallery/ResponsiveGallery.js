@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 
 const ResponsiveGallery = ({ images }) => {
   return (
@@ -10,7 +9,7 @@ const ResponsiveGallery = ({ images }) => {
             key={index}
             className="shadow-md z-10"
           >
-            <Image
+            <img
               src={src}
               alt={`Image ${index + 1}`}
               width={300}

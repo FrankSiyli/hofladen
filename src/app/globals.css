@@ -26,9 +26,14 @@
 }
 
 .headerBackground { 
-  background-image: url("/header_1.png");
-  background-size: 35%;
+  background-image: url("../../public/images/header1.png");
+  background-size: 50%;
   background-repeat: no-repeat;
+}
+
+.logo {
+  width: 300px;
+  height: auto;
 }
 
 .headerBackground::before {

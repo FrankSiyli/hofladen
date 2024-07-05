@@ -55,11 +55,11 @@ const Header = () => {
   return (
     <>
       <div
-        className={`headerBackground fixed z-20 top-0 left-0 w-screen md:h-24 h-16 bg-appGrey/90 flex justify-center items-center shadow-xl transition-transform duration-300 ${
+        className={`headerBackground fixed z-20 top-0 left-0 w-screen h-24 bg-appGrey/90 flex justify-center items-center shadow-xl transition-transform duration-300 ${
           showHeader ? "transform translate-y-0" : "transform -translate-y-full"
         }`}
       >
-        <Logo />
+        <img className="logo z-30 p-10" src="/images/logo.png" alt="logo" />
         <ButtonHamburgerMenu
           handleClick={handleMenuClick}
           secondProp={showMenu}

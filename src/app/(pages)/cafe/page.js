@@ -6,10 +6,10 @@ import ResponsiveGallery from "@/app/components/ResponsiveGallery/ResponsiveGall
 import Text from "@/app/components/Text/Text";
 
 const imageUrls = [
-  "/cafe/6.png",
-  "/cafe/16.png",
-  "/cafe/19.png",
-  "/cafe/cafe_1.png",
+  "/images/6.png",
+  "/images/16.png",
+  "/images/19.png",
+  "/images/cafe_1.png",
 ];
 
 const Page = () => {
