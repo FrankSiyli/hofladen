@@ -10,7 +10,7 @@ const imageUrls = [
   "/images/7.png",
   "/images/9.png",
   "/images/2.png",
-  "/images/3.png",
+  "/images/11.png",
 ];
 
 const Page = () => {

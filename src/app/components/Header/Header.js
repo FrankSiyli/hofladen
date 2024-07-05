@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Menu from "../Menu/Menu";
-import Logo from "../Logo/Logo";
 import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";

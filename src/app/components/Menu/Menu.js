@@ -1,3 +1,4 @@
+"use client"
 import ArrowRightSvg from "@/app/components/buttons/svgCollection/ArrowRightSvg";
 import React, { forwardRef, useEffect, useState } from "react";
 import menuItemsArray from "./menuItemsArray/menuItemsArray";
