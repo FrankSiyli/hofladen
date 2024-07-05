@@ -1,20 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import logo from "../../public/images/logo.png";
-import Image from "next/image";
 
 const NotFound = () => {
   return (
     <>
-      <div className="flex flex-col justify-center content-center text-center mx-auto w-screen h-screen">
-        <Image
-          priority
-          src={logo}
-          alt="logo"
-          className="mx-auto"
-          width={300}
-          height={1}
-        />
+      <div className="flex flex-col justify-center items-center text-center mx-auto w-screen h-screen">
+      <img className="logo z-30 p-10" src="/images/logo.png" alt="logo" />
+
         <h2 className="my-10">uups... </h2>
         <p>
           <Link
