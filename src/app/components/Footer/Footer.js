@@ -8,6 +8,7 @@ const Footer = () => {
         <p className="text-appBlue ">Anschrift:</p>
         <p>Zu den Hofwiesen 3</p>
         <p>19075 Warsow</p>
+        <p>OT Kothendorf</p>
         <p className="text-appBlue mt-3">Öffnungszeiten:</p>
         <p>Sa + So 13-18 Uhr</p>
       </div>
