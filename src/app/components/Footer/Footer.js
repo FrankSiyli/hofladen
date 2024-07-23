@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto flex flex-col md:flex-row justify-between p-5 items-center  text-center bg-appGrey/50">
+    <div className="w-full h-auto flex flex-col md:flex-row justify-between p-5 items-center text-center bg-appGrey/50">
       <div >
         <p className="text-appBlue ">Anschrift:</p>
         <p>Zu den Hofwiesen 3</p>
@@ -20,7 +20,7 @@ const Footer = () => {
           hofwiesen-cafe@gmx.de
         </a>
       </div>
-      <div className="flex flex-col justify-center gap-2 mt-10 md:mt-0 text-sm text-appBlue underline">
+      <div className="flex flex-col justify-center gap-2 mt-10 md:mt-0 text-appBlue underline">
         <Link href="/impressum">Impressum</Link>
         <Link href="/datenschutz">Datenschutz</Link>
       </div>

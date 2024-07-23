@@ -3,7 +3,6 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 
-const imageUrls = ["/images/event_1.png"];
 
 const Page = () => {
   return (
@@ -11,8 +10,7 @@ const Page = () => {
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <img className="h-3xl w-auto p-2 my-40 z-10 shadow" src="/images/event_1.png" alt="flyer" />
-     
+      <img className="h-[500px] sm:h-[800px] w-auto p-2 my-40 z-10" src="/images/event_1.png" alt="flyer" />
     </div>
   );
 };
