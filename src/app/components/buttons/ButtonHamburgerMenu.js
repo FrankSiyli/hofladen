@@ -26,7 +26,7 @@ const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
 
       <style jsx>{`
         span:hover div {
-          border-color: var(--black);
+          border-color: var(--appText);
         }
       `}</style>
     </span>

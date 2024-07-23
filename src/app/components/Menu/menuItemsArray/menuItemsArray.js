@@ -1,16 +1,16 @@
 const menuItemsArray = [
   {
     title: "Tortenbestellungen",
-    link: "/bestellungen"
+    link: "/bestellungen",
   },
   {
     title: "Das Café",
-    link: "/cafe"
+    link: "/cafe",
   },
-  //{
-  //  title: "Veranstaltungen",
-  //  link: "/veranstaltungen"
-  // },
+  {
+    title: "Veranstaltungen",
+    link: "/veranstaltungen",
+  },
 ];
 
 export default menuItemsArray;
