@@ -14,13 +14,13 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico', 
   },
-  image: "https://hofwiesen-cafe.de/images/7.png",
+  image: "https://hofwiesen-cafe.de/images/google_search_image.png",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-       <Head>
+      <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href={metadata.icons.icon} />
@@ -29,6 +29,15 @@ export default function RootLayout({ children }) {
           "@type": "LocalBusiness",
           "name": "Hofwiesen Cafe",
           "image": metadata.image, 
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Zu den Hofwiesen 3",
+            "addressLocality": "Kothendorf",
+            "addressRegion": "Schwerin",
+            "postalCode": "19075",
+            "addressCountry": "Deutschland"
+          },
+          "telephone": "0173  82 84 585",
           "url": "https://hofwiesen-cafe.de",
           "priceRange": "$$"
         }) }} />
