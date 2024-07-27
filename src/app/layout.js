@@ -24,23 +24,28 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href={metadata.icons.icon} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Hofwiesen Cafe",
-          "image": metadata.image, 
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Zu den Hofwiesen 3",
-            "addressLocality": "Kothendorf",
-            "addressRegion": "Schwerin",
-            "postalCode": "19075",
-            "addressCountry": "Deutschland"
-          },
-          "telephone": "0173  82 84 585",
-          "url": "https://hofwiesen-cafe.de",
-          "priceRange": "$$"
-        }) }} />
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ 
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Hofwiesen Cafe",
+              "image": metadata.image, // Use the image from metadata
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Zu den Hofwiesen 3",
+                "addressLocality": "Kothendorf",
+                "addressRegion": "Schwerin",
+                "postalCode": "19075",
+                "addressCountry": "Deutschland"
+              },
+              "telephone": "0173  82 84 585",
+              "url": "https://hofwiesen-cafe.de",
+              "priceRange": "$$"
+            }) 
+          }} 
+        />
       </Head>
       <body
         className={`${inter.variable} font-sans bg-[url('../../public/images/background.png')] bg-fill bg-fixed bg-center`}
