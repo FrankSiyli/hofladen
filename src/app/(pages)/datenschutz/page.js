@@ -47,6 +47,7 @@ const Page = () => {
               (Art. 20 DSGVO).
             </li>
           </ul>
+          <p>favicon from https://icons8.com</p>
           <p>
             Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese
             jederzeit mit Wirkung für die Zukunft widerrufen.
