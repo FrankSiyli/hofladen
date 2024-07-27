@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href={metadata.icons.icon} />
+        <link rel="icon" sizes="32x32" href={metadata.icons.icon} />
         <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ 
