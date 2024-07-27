@@ -12,6 +12,7 @@ const imageUrls = [
   "/images/2.png",
 ];
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-2 ">
@@ -27,6 +28,7 @@ export default function Home() {
         <Text textValue="Lassen Sie sich von unserem Angebot inspirieren und gönnen Sie sich eine genussvolle Pause." />
         <div className="border w-full opacity-50 m-1 max-w-[500px] mx-auto"></div>
         <Text textValue="Darüber hinaus bieten wir stets auch vegane 🌱 und glutenfreie 🌾 Optionen an." />
+        
     </main>
   );
 }
