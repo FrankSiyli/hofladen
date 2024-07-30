@@ -21,11 +21,9 @@ const Page = () => {
       </Link>
       <div className="mt-40">
         <Text textValue="Exklusive Torten - Handgefertigt nach Ihren Wünschen" />
-        <div className="border opacity-50 m-1 max-w-[500px] mx-auto"></div>
         <Text textValue="Sie suchen nach einer besonderen Torte für einen speziellen Anlass? Im Hofwiesen-Café fertigen wir auf Bestellung exklusive Torten, die nicht nur optisch ein Highlight sind, sondern auch geschmacklich überzeugen." />
         <ResponsiveGallery images={imageUrls} />
         <Text textValue="Ob Geburtstag, Hochzeit, Jubiläum oder ein anderer besonderer Tag - wir gestalten Ihre Torte mit viel Liebe zum Detail und verwenden dabei nur die besten Zutaten aus der Region. Lassen Sie sich von unseren Kreationen inspirieren und sprechen Sie uns an, um Ihre Wunsch-Torte in Auftrag zu geben." />
-        <div className="border opacity-50 m-1 max-w-[500px] mx-auto"></div>
         <Text textValue="Wir freuen uns darauf, Ihren besonderen Moment noch unvergesslicher zu machen." />
       </div>
     </div>

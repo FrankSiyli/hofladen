@@ -22,11 +22,8 @@ export default function Home() {
       </div>
       <ResponsiveGallery images={imageUrls} />
         <Text textValue="Im Hofwiesen-Café legen wir großen Wert auf Qualität und Frische. Unsere vielfältige Auswahl an Kaffeespezialitäten, von klassischem Espresso bis hin zu kreativen Kaffeekreationen, lässt keine Wünsche offen." />
-        <div className="border w-full opacity-50 m-1 max-w-[500px] mx-auto"></div>
         <Text textValue="Begleiten Sie Ihren Kaffee mit einem Stück unserer liebevoll zubereiteten Kuchen oder Torten, die alle nach traditionellen Rezepten und mit regionalen Zutaten gebacken werden. Ob fruchtig, schokoladig oder nussig - bei uns finden Sie für jeden Geschmack das Passende." />
-        <div className="border w-full opacity-50 m-1 max-w-[500px] mx-auto"></div>
         <Text textValue="Lassen Sie sich von unserem Angebot inspirieren und gönnen Sie sich eine genussvolle Pause." />
-        <div className="border w-full opacity-50 m-1 max-w-[500px] mx-auto"></div>
         <Text textValue="Darüber hinaus bieten wir stets auch vegane 🌱 und glutenfreie 🌾 Optionen an." />
         
     </main>

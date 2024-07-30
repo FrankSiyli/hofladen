@@ -14,7 +14,7 @@ const ResponsiveGallery = ({ images }) => {
               alt={`Image ${index + 1}`}
               width={300}
               height={1}
-              className="object-cover h-60 w-72 rounded"
+              className="object-cover h-60 w-72 rounded shadow-2xl"
             />
           </div>
         ))}

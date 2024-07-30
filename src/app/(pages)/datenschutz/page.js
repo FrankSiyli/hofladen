@@ -10,14 +10,16 @@ const Page = () => {
         <Link href="/">
           <ArrowLeftSvg />
         </Link>
-        <div className="mt-48 px-10 backdrop-blur-md backdropSafari rounded-xl mb-10 p-5">
+        <div className="mt-48 px-10 backdrop-blur-md backdropSafari text-appBlue rounded-xl mb-10 p-5">
           <h2 className="mb-20 text-2xl">Datenschutz</h2>
           <p>
             Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der
             EU-Datenschutzgrundverordnung (DSGVO), ist:
           </p>
           <p>Yvonne Stampniok</p>
-          <p>Quelle favicon : www.iconarchive.com</p>
+          <br />
+          <p>favicon source https://icons8.com</p>
+          <br />
           <h2>Ihre Betroffenenrechte</h2>
           <p>
             Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten
@@ -47,7 +49,6 @@ const Page = () => {
               (Art. 20 DSGVO).
             </li>
           </ul>
-          <p>favicon from https://icons8.com</p>
           <p>
             Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese
             jederzeit mit Wirkung für die Zukunft widerrufen.
@@ -142,9 +143,9 @@ const Page = () => {
           </p>
           <p>
             Während Ihres Website-Besuchs werden u.a. folgende Daten an Google
-            übermittelt: Aufgerufene Seiten Die Erreichung von Website-Zielen (z.B.
-            Kontaktanfragen und Newsletter-Anmeldungen) Ihr Verhalten auf den
-            Seiten (beispielsweise Verweildauer, Klicks, Scrolltiefe) Ihr
+            übermittelt: Aufgerufene Seiten Die Erreichung von Website-Zielen
+            (z.B. Kontaktanfragen und Newsletter-Anmeldungen) Ihr Verhalten auf
+            den Seiten (beispielsweise Verweildauer, Klicks, Scrolltiefe) Ihr
             ungefährer Standort (Land und Stadt) Ihre Internetadresse
             (IP-Adresse) Technische Informationen wie Browser, Internetanbieter,
             Endgerät und Bildschirmauflösung Herkunftsquelle Ihres Besuchs (d.h.

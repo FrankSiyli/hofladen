@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full h-auto flex flex-col md:flex-row justify-between p-5 items-center text-center bg-appGrey/50">
+    <div className="w-full h-auto flex flex-col md:flex-row justify-between p-5 items-center text-center bg-appGrey/30">
       <div>
         <p className="text-appBlue">Anschrift:</p>
         <p>Zu den Hofwiesen 3</p>
