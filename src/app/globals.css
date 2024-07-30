@@ -50,6 +50,7 @@
   background-image: 
     url("../../public/images/header_image.png");
   background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
   background-blend-mode: normal; 
   z-index: -1; 
