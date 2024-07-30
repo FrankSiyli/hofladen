@@ -10,7 +10,7 @@ const Page = () => {
       <Link href="/">
         <ArrowLeftSvg />
       </Link>
-      <img className="h-[500px] sm:h-[800px] w-auto p-2 my-40 z-10" src="/images/event_1.png" alt="flyer" />
+      <img className="h-[500px] sm:h-[800px] w-auto p-2 my-40 z-10" src="/images/veranstaltungen/event_1.png" alt="flyer" />
     </div>
   );
 };

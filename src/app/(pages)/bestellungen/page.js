@@ -6,11 +6,14 @@ import ResponsiveGallery from "@/app/components/ResponsiveGallery/ResponsiveGall
 import Text from "@/app/components/Text/Text";
 
 const imageUrls = [
-  "/images/3.png",
-  "/images/7.png",
-  "/images/9.png",
-  "/images/2.png",
-  "/images/11.png",
+  "/images/bestellungen/21.png",
+  "/images/bestellungen/22.png",
+  "/images/bestellungen/23.png",
+  "/images/bestellungen/24.png",
+  "/images/bestellungen/25.png",
+  "/images/bestellungen/26.png",
+  "/images/bestellungen/27.png",
+  "/images/bestellungen/28.png",
 ];
 
 const Page = () => {

@@ -32,7 +32,6 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content="/google_search_image.png" />
         <meta property="twitter:image" content="/google_search_image.png" />
-       
       </Head>
       <body
         className={`${inter.variable} font-sans bg-[url('../../public/images/background.png')] bg-fill bg-fixed bg-center`}

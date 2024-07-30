@@ -5,11 +5,13 @@ import ResponsiveGallery from "./components/ResponsiveGallery/ResponsiveGallery"
 import Text from "./components/Text/Text";
 
 const imageUrls = [
-  "/images/17.png",
-  "/images/13.png",
-  "/images/6.png",
-  "/images/19.png",
-  "/images/2.png",
+  "/images/landingPage/11.png",
+  "/images/landingPage/12.png",
+  "/images/landingPage/13.png",
+  "/images/landingPage/14.png",
+  "/images/landingPage/15.png",
+  "/images/landingPage/16.png",
+  "/images/landingPage/17.png",
 ];
 
 
