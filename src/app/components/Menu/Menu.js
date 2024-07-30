@@ -27,10 +27,10 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
           }  duration-100`}
         >
           <img
-            className="absolute top-0 left-0 opacity-50 h-auto"
+            className="absolute top-0 left-0 opacity-70 h-auto"
             width={300}
             height={1}
-            src="/images/menu1.png"
+            src="/images/menu_1.png"
             alt="brote"
           />
           <div className="relative w-48 z-10">
@@ -49,10 +49,10 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             </span>
           </div>
           <img
-            className="absolute bottom-0 left-0 opacity-50 h-auto"
+            className="absolute bottom-0 left-0 opacity-70 h-auto"
             width={300}
             height={1}
-            src="/images/menu2.png"
+            src="/images/menu_2.png"
             alt="torte"
           />
         </div>

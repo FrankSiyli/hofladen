@@ -61,7 +61,7 @@ const Header = () => {
         className={`fixed-header ${showHeader ? "transform translate-y-0" : "transform -translate-y-full"}`}
       >
         <div className="headerImage"></div>
-        <img className="logo z-30 p-10" src="/images/logo.png" alt="logo" />
+        <img className="logo backdrop-blur-sm rounded z-30 p-10" src="/images/logo.png" alt="logo" />
         <ButtonHamburgerMenu
           handleClick={handleMenuClick}
           secondProp={showMenu}

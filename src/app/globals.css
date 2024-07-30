@@ -48,8 +48,7 @@
   width: 25%; 
   height: 100%; 
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0) 70%, rgba(248, 245, 245, 0.9) 100%),
-    url("../../public/images/7.png");
+    url("../../public/images/header_image.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: normal; 

@@ -17,7 +17,7 @@ export const metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    images: ["/images/google_search_image.png"],
+    images: ["/google_search_image.png"],
   },
 };
 
@@ -30,9 +30,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" sizes="32x32" href={metadata.icons.icon} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content={metadata.openGraph.images[0]} />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="500" />
+        <meta property="og:image" content="/google_search_image.png" />
+        <meta property="twitter:image" content="/google_search_image.png" />
+       
       </Head>
       <body
         className={`${inter.variable} font-sans bg-[url('../../public/images/background.png')] bg-fill bg-fixed bg-center`}
