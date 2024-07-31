@@ -4,6 +4,7 @@ import Menu from "../Menu/Menu";
 import ButtonHamburgerMenu from "../buttons/ButtonHamburgerMenu";
 import { useRecoilState } from "recoil";
 import { showMenuState } from "@/app/recoil/atoms/showMenuState";
+import Link from "next/link";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
@@ -61,7 +62,7 @@ const Header = () => {
         className={`fixed-header ${showHeader ? "transform translate-y-0" : "transform -translate-y-full"}`}
       >
         <div className="headerImage"></div>
-        <img className="logo backdrop-blur-sm rounded z-30 p-10" src="/images/logo.png" alt="logo" />
+        <Link href={"/#"}><img className="logo backdrop-blur-sm rounded z-30 p-10" src="/images/logo.png" alt="logo" /></Link>
         <ButtonHamburgerMenu
           handleClick={handleMenuClick}
           secondProp={showMenu}

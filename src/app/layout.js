@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <meta property="twitter:image" content="/google_search_image.png" />
       </Head>
       <body
-        className={`${inter.variable} font-sans bg-[url('../../public/images/background.png')] bg-fill bg-fixed bg-center`}
+        className={`${inter.variable} font-sans `}
       >
         <RecoilRootWrapper>
           <img
