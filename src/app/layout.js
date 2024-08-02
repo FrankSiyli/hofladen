@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" sizes="32x32" href={metadata.icons.icon} />
+        <link rel="icon" sizes="96x96" href={metadata.icons.icon} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content="/google_search_image.png" />
