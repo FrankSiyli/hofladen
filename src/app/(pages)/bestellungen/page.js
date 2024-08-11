@@ -14,6 +14,9 @@ const imageUrls = [
   "/images/bestellungen/26.png",
   "/images/bestellungen/27.png",
   "/images/bestellungen/28.png",
+  "/images/bestellungen/29.png",
+  "/images/bestellungen/210.png",
+  "/images/bestellungen/211.png",
 ];
 
 const Page = () => {

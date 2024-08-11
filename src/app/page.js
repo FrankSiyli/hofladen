@@ -14,6 +14,10 @@ const imageUrls = [
   "/images/landingPage/18.png",
   "/images/landingPage/17.png",
   "/images/landingPage/19.png",
+  "/images/landingPage/110.png",
+  "/images/landingPage/111.png",
+  "/images/landingPage/112.png",
+  "/images/landingPage/113.png",
 ];
 
 

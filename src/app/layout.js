@@ -16,9 +16,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  openGraph: {
-    images: ["http://hofwiesen-cafe.de/google_search_image.png"],
-  },
+  
 };
 
 export default function RootLayout({ children }) {
@@ -30,24 +28,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" sizes="96x96" href={metadata.icons.icon} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta
-          property="og:image"
-          content="http://hofwiesen-cafe.de/google_search_image.png"
-        />
-        <meta
-          property="twitter:image"
-          content="http://hofwiesen-cafe.de/google_search_image.png"
-        />
+       
       </Head>
 
       <body className={`${inter.variable} font-sans `}>
         <RecoilRootWrapper>
-          <img
-            className="h-0"
-            src="/images/google_search_image.png"
-            alt="google_search_image"
-          />
-
           <Header />
           {children}
         </RecoilRootWrapper>

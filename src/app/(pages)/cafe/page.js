@@ -10,12 +10,12 @@ const imageUrls = [
   "/images/cafe/32.png",
   "/images/cafe/33.png",
   "/images/cafe/34.png",
-  "/images/cafe/35.png",
   "/images/cafe/36.png",
   "/images/cafe/37.png",
   "/images/cafe/38.png",
   "/images/cafe/39.png",
   "/images/cafe/310.png",
+  "/images/cafe/311.png",
   
 ];
 
