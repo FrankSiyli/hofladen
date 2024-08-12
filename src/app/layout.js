@@ -13,10 +13,6 @@ export const metadata = {
     "Hofwiesen-Cafe Kothendorf | Köstliche hausgemachte Torten und eine gemütliche Atmosphäre",
   description:
     "Herzlich willkommen im Hofwiesen-Café. Ihrem idyllischen Rückzugsort inmitten der wunderschönen ländlichen Umgebung. Im Hofwiesen-Café legen wir großen Wert auf Qualität und Frische. Unsere vielfältige Auswahl an Kaffeespezialitäten, von klassischem Espresso bis hin zu kreativen Kaffeekreationen, lässt keine Wünsche offen. Begleiten Sie Ihren Kaffee mit einem Stück unserer liebevoll zubereiteten Kuchen oder Torten, die alle nach traditionellen Rezepten und mit regionalen Zutaten gebacken werden. Ob fruchtig, schokoladig oder nussig - bei uns finden Sie für jeden Geschmack das Passende. Lassen Sie sich von unserem Angebot inspirieren und gönnen Sie sich eine genussvolle Pause im Hofwiesen-Café. #Hofladen #Schwerin #Warsow #Kaffee #Kuchen #Radausflug #Landliebe #vegan",
-  icons: {
-    icon: "/favicon.ico",
-  },
-  
 };
 
 export default function RootLayout({ children }) {
@@ -25,7 +21,7 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" sizes="96x96" href={metadata.icons.icon} />
+        <link rel="icon" sizes="any" href="/favicon.ico" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
        
