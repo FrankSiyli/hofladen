@@ -34,24 +34,29 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
           />
           <div className="relative w-48 z-10">
             <span className="flex flex-col">
-            {menuItemsArray.map((menuItem, menuItemIndex) => (
-  <Link
-    onClick={() => setShowMenu(false)}
-    href={menuItem.link}
-    key={menuItemIndex}
-    className="-ml-8 p-2 text-xl text-center rounded m-1 text-appGrey hover:shadow hover:-translate-x-0.5 hover:-translate-y-0.5 border border-appGrey cursor-pointer transform transition-transform duration-300"
-    style={{
-      backgroundImage: `url('/images/cafe/${
-        menuItemIndex === 0 ? '37.png' : 
-        menuItemIndex === 1 ? '36.png' : 
-        menuItemIndex === 2 ? '38.png' : 'default.png'
-      }')`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      
-    }}
-  >
-                  <p className="backdrop-blur rounded p-1">{menuItem.title}</p>
+              {menuItemsArray.map((menuItem, menuItemIndex) => (
+                <Link
+                  onClick={() => setShowMenu(false)}
+                  href={menuItem.link}
+                  key={menuItemIndex}
+                  className="-ml-8 p-2 text-xl text-center rounded m-1 text-appGrey hover:shadow hover:-translate-x-0.5 hover:-translate-y-0.5 border border-appGrey/50 cursor-pointer transform transition-transform duration-300"
+                  style={{
+                    backgroundImage: `url('/images/cafe/${
+                      menuItemIndex === 0
+                        ? "37.png"
+                        : menuItemIndex === 1
+                        ? "36.png"
+                        : menuItemIndex === 2
+                        ? "38.png"
+                        : "default.png"
+                    }')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <p className="backdrop-blur backdropSafari rounded p-1">
+                    {menuItem.title}
+                  </p>
                 </Link>
               ))}
             </span>

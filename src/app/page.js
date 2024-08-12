@@ -27,7 +27,11 @@ export default function Home() {
      
       <div className="mt-40">
       <div className="relative mb-20 rounded text-center max-w-xs p-3 mx-auto bg-appGrey/60 backdrop-blur-sm border border-appBlue/50 text-appBlue">
-        <span className="absolute sm:-top-5 -top-7 sm:-left-14 -left-5 bg-appGrey border border-appRed rounded  p-1 shadow">Veranstaltung</span>
+        <span
+        
+       
+
+        className="absolute -top-6 sm:-left-14 -left-10 border border-appRed bg-appGrey rounded px-1 text-xl shadow text-appRed">💃 Veranstaltung 🕺</span>
         <p className="">Am 18.8. Frühschoppen mit dem Shanty-Chor</p>
         <p className="text-xs mt-3">Alle Infos im Menu unter Veranstaltungen</p>
       </div>
