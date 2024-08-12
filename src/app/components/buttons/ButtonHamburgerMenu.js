@@ -6,13 +6,13 @@ const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
   return (
     <span
       onClick={handleClick}
-      className="fixed z-30 h-10 right-5 rounded p-2 cursor-pointer transform transition-transform duration-300"
+      className="fixed flex flex-col items-center justify-center z-30 top-3 right-3 sm:top-5 sm:right-10 rounded p-2 cursor-pointer transform transition-transform duration-300"
       style={{
         backgroundImage: `url('/images/cafe/37.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         boxShadow: isHovered ? '5px 5px 7px #0a11205f' : '3px 3px 5px #0a11205f',
-        translate: isHovered ? '-1px -1px ' : '',
+        translate: isHovered ? '-0.5px -0.5px ' : '',
       }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -24,10 +24,10 @@ const ButtonHamburgerMenu = ({ handleClick, secondProp }) => {
       ></div>
 
       <div
-        className={`w-8 my-2 border rounded border-white transform transition-all duration-700 ${
-          secondProp ? "rotate-45 w-40" : ""
+        className={`text-white m-1 backdrop-blur backdropSafari text-xs transform transition-all duration-700 ${
+          secondProp ? "" : ""
         }`}
-      ></div>
+      >MENU</div>
 
       <div
         className={`w-8 border rounded border-white transform transition-all duration-1000 ${

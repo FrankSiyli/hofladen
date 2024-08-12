@@ -21,7 +21,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l-1 border-b-1 border-t-1 border-appBlue rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l border-appGrey/50 rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-300`}
         >
@@ -32,32 +32,34 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             src="/images/menu_1.png"
             alt="brote"
           />
-          <div className="relative w-48 z-10">
+          <div className="relative w-44 z-10">
             <span className="flex flex-col">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
-                <Link
-                  onClick={() => setShowMenu(false)}
-                  href={menuItem.link}
-                  key={menuItemIndex}
-                  className="-ml-8 p-2 text-xl text-center rounded m-1 text-appGrey hover:shadow hover:-translate-x-0.5 hover:-translate-y-0.5 border border-appGrey/50 cursor-pointer transform transition-transform duration-300"
-                  style={{
-                    backgroundImage: `url('/images/cafe/${
-                      menuItemIndex === 0
-                        ? "37.png"
-                        : menuItemIndex === 1
-                        ? "36.png"
-                        : menuItemIndex === 2
-                        ? "38.png"
-                        : "default.png"
-                    }')`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <p className="backdrop-blur backdropSafari rounded p-1">
-                    {menuItem.title}
-                  </p>
-                </Link>
+              <Link
+              onClick={() => setShowMenu(false)}
+              href={menuItem.link}
+              key={menuItemIndex}
+              className="relative flex justify-center items-center -ml-6 p-2 rounded m-1 text-appGrey hover:shadow hover:-translate-x-0.5 hover:-translate-y-0.5 border border-appGrey/50 cursor-pointer transform transition-transform duration-300"
+              style={{
+                backgroundImage: `url('/images/cafe/${
+                  menuItemIndex === 0
+                    ? "37.png"
+                    : menuItemIndex === 1
+                    ? "36.png"
+                    : menuItemIndex === 2
+                    ? "38.png"
+                    : "default.png"
+                }')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+    
+              <span className="backdrop-blur backdropSafari rounded px-2">
+                {menuItem.title}
+              </span>
+            </Link>
+            
               ))}
             </span>
           </div>
