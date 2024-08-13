@@ -7,8 +7,12 @@ import { showMenuState } from "@/app/recoil/atoms/showMenuState";
 
 const Menu = forwardRef(({ handleMenuClick }, ref) => {
   const [loaded, setLoaded] = useState(false);
-  useEffect(() => setLoaded(true), []);
   const [showMenu, setShowMenu] = useRecoilState(showMenuState);
+  const [hoveredItemIndex, setHoveredItemIndex] = useState(null);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
 
   return (
     <div
@@ -21,55 +25,49 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-1 bottom-0 w-48 p-5 bg-appGrey border-l border-appGrey/50 rounded shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-0 h-1/2 w-48 p-5 bg-appGrey shadow-2xl flex flex-col justify-end items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-300`}
         >
           <img
-            className="absolute top-0 left-0 h-1/3 sm:h-auto opacity-70"
+            className="absolute top-0 left-0 h-1/3 sm:h-auto"
             width={300}
             height={1}
             src="/images/menu_1.png"
             alt="brote"
           />
-          <div className="relative w-44 z-10">
+          <div className="absolute left-0 -bottom-7 w-48 z-10">
             <span className="flex flex-col">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
-              <Link
-              onClick={() => setShowMenu(false)}
-              href={menuItem.link}
-              key={menuItemIndex}
-              className="relative flex justify-center items-center -ml-6 p-2 rounded m-1 text-appGrey hover:shadow hover:-translate-x-0.5 hover:-translate-y-0.5 border border-appGrey/50 cursor-pointer transform transition-transform duration-300"
-              style={{
-                backgroundImage: `url('/images/cafe/${
-                  menuItemIndex === 0
-                    ? "37.png"
-                    : menuItemIndex === 1
-                    ? "36.png"
-                    : menuItemIndex === 2
-                    ? "38.png"
-                    : "default.png"
-                }')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-    
-              <span className="backdrop-blur backdropSafari rounded px-2">
-                {menuItem.title}
-              </span>
-            </Link>
-            
+                <Link
+                  onClick={() => setShowMenu(false)}
+                  href={menuItem.link}
+                  key={menuItemIndex}
+                  className="relative flex justify-center items-center -ml-6 p-2 bg-appBlue rounded m-5 text-appGrey shadow hover:shadow-xl border border-appGrey/50 cursor-pointer transform transition-transform duration-300"
+                  style={{
+                    backgroundImage:
+                      hoveredItemIndex === menuItemIndex
+                        ? `url('/images/cafe/${
+                            menuItemIndex === 0
+                              ? "37.png"
+                              : menuItemIndex === 1
+                              ? "36.png"
+                              : menuItemIndex === 2
+                              ? "38.png"
+                              : "bg-appBlue"
+                          }')`
+                        : "none",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                  onMouseEnter={() => setHoveredItemIndex(menuItemIndex)}
+                  onMouseLeave={() => setHoveredItemIndex(null)}
+                >
+                  <span>{menuItem.title}</span>
+                </Link>
               ))}
             </span>
           </div>
-          <img
-            className="absolute bottom-0 left-0 opacity-70 h-1/3 sm:h-auto"
-            width={300}
-            height={1}
-            src="/images/menu_2.png"
-            alt="torte"
-          />
         </div>
       ) : null}
     </div>

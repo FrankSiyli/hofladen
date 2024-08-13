@@ -62,7 +62,7 @@ const Header = () => {
         className={`fixed-header ${showHeader ? "transform translate-y-0" : "transform -translate-y-full"}`}
       >
         <div className="headerImage"></div>
-        <Link href={"/#"}><img className="logo backdrop-blur-sm rounded z-30 p-10" src="/images/logo.png" alt="logo" /></Link>
+        <Link href={"/#"}><img className="w-[250px] sm:w-[300px] h-auto backdrop-blur-sm rounded z-30 p-10" src="/images/logo.png" alt="logo" /></Link>
         <ButtonHamburgerMenu
           handleClick={handleMenuClick}
           secondProp={showMenu}

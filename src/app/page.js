@@ -27,12 +27,12 @@ export default function Home() {
 
       <div className="mt-40">
         <div className="relative mb-20 rounded text-center max-w-xs p-3 mx-auto bg-appGrey/60 backdrop-blur-sm border border-appBlue/50 text-appBlue">
-          <span className="absolute -top-6 sm:-left-14 -left-10 border border-appRed bg-appGrey rounded px-1 text-xl shadow text-appRed">
+          <span className="absolute -top-5 -left-10 -rotate-12 border border-appRed bg-appGrey rounded px-1 text-xl shadow text-appRed">
             💃 Veranstaltung 🕺
           </span>
           <p className="">Am 18.8. Frühschoppen mit dem Shanty-Chor</p>
-          <p className="text-xs mt-3">
-            Alle Infos im Menu unter Veranstaltungen
+          <p className="mt-3">
+            Alle Infos unter <a className="underline" href="/veranstaltungen">Veranstaltungen</a>
           </p>
         </div>
         <Text textValue="Herzlich willkommen im Hofwiesen-Café. Ihrem idyllischen Rückzugsort inmitten der wunderschönen ländlichen Umgebung. " />
