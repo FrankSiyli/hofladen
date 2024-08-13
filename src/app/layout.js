@@ -21,10 +21,9 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" sizes="any" href="/favicon.ico" />
+        <link rel="icon" sizes="96x96" href="/favicon.ico" />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-       
       </Head>
 
       <body className={`${inter.variable} font-sans `}>
