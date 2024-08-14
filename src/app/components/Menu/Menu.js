@@ -25,47 +25,31 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-0 h-1/2 w-48 p-5 bg-appGrey shadow-2xl flex flex-col justify-end items-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-0 h-full rounded w-48 p-5 bg-appGrey/90 shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           }  duration-300`}
         >
           <img
-            className="absolute top-0 left-0 h-1/3 h-auto"
+            className="absolute top-0 left-0 h-1/3 h-auto opacity-70"
             width={300}
             height={1}
             src="/images/menu_1.png"
             alt="brote"
           />
-          <div className="absolute left-0 -bottom-7 w-48 z-10">
+          <div className=" w-48 z-10">
             <span className="flex flex-col">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
                 <Link
                   onClick={() => setShowMenu(false)}
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="relative flex justify-center items-center -ml-6 p-2 rounded m-3 text-appGrey shadow hover:shadow-xl border border-appGrey/50 cursor-pointer transform transition-transform duration-300"
+                  className="relative flex justify-center items-center h-16 first:mt-20 -ml-3 p-2 rounded m-2 text-appBlue bg-appGrey border border-appText cursor-pointer transform transition-transform duration-300"
                   style={{
-                    background: hoveredItemIndex === menuItemIndex
-                      ? `url('/images/cafe/${
-                          menuItemIndex === 0
-                            ? "37.png"
-                            : menuItemIndex === 1
-                            ? "36.png"
-                            : menuItemIndex === 2
-                            ? "38.png"
-                            : "bg-appBlue"
-                        }') center/cover no-repeat`
-                      : `linear-gradient(to bottom, #0a4dbf 100%, transparent 15%),
-                         url('/images/cafe/${
-                           menuItemIndex === 0
-                             ? "37.png"
-                             : menuItemIndex === 1
-                             ? "36.png"
-                             : menuItemIndex === 2
-                             ? "38.png"
-                             : "bg-appBlue"
-                         }') bottom/100% 15px no-repeat`,
+                    
                     transition: 'background-size 0.3s ease, background-position 0.3s ease',
+                    boxShadow: hoveredItemIndex === menuItemIndex ? '5px 5px 7px #0a11205f' : '3px 3px 5px #0a11205f',
+                    translate: hoveredItemIndex === menuItemIndex ? '-1px -1px ' : '',
+                
                   }}
                   onMouseEnter={() => setHoveredItemIndex(menuItemIndex)}
                   onMouseLeave={() => setHoveredItemIndex(null)}
