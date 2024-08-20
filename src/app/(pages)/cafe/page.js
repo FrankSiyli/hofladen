@@ -16,6 +16,9 @@ const imageUrls = [
   "/images/cafe/39.png",
   "/images/cafe/310.png",
   "/images/cafe/311.png",
+  "/images/cafe/312.png",
+  "/images/cafe/313.png",
+  "/images/cafe/314.png",
   
 ];
 

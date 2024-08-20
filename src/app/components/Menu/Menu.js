@@ -27,7 +27,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
           ref={ref}
           className={`fixed top-0 right-0 h-full rounded w-48 p-5 bg-appGrey/90 shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
-          }  duration-300`}
+          } duration-300`}
         >
           <img
             className="absolute top-0 left-0 h-1/3 h-auto opacity-70"
@@ -36,25 +36,37 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
             src="/images/menu_1.png"
             alt="brote"
           />
-          <div className=" w-48 z-10">
+          <div className="w-48 z-10">
             <span className="flex flex-col">
               {menuItemsArray.map((menuItem, menuItemIndex) => (
                 <Link
                   onClick={() => setShowMenu(false)}
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="relative flex justify-center items-center h-16 first:mt-20 -ml-3 p-2 rounded m-2 text-appBlue bg-appGrey border border-appText cursor-pointer transform transition-transform duration-300"
+                  className="relative flex justify-center items-center h-14 bg-appGrey -ml-3 p-2 rounded m-2 text-xl font-bold text-appBlue border border-appBlue cursor-pointer"
                   style={{
-                    
-                    transition: 'background-size 0.3s ease, background-position 0.3s ease',
-                    boxShadow: hoveredItemIndex === menuItemIndex ? '5px 5px 7px #0a11205f' : '3px 3px 5px #0a11205f',
-                    translate: hoveredItemIndex === menuItemIndex ? '-1px -1px ' : '',
-                
+                    boxShadow: hoveredItemIndex === menuItemIndex ? "5px 5px 7px #0a11205f" : "3px 3px 5px #0a11205f",
+                    transform: hoveredItemIndex === menuItemIndex ? "translate(-1px, -1px)" : "",
                   }}
                   onMouseEnter={() => setHoveredItemIndex(menuItemIndex)}
                   onMouseLeave={() => setHoveredItemIndex(null)}
                 >
-                  <span>{menuItem.title}</span>
+                  <span className="relative z-10">{menuItem.title}</span>
+                  <span
+                    className="absolute inset-0 z-0 bg-center bg-cover"
+                    style={{
+                      backgroundImage: `url('/images/cafe/${
+                        menuItemIndex === 0
+                          ? "37.png"
+                          : menuItemIndex === 1
+                          ? "36.png"
+                          : menuItemIndex === 2
+                          ? "38.png"
+                          : "bg-appBlue"
+                      }')`,
+                      opacity: 0.3,
+                    }}
+                  />
                 </Link>
               ))}
             </span>
