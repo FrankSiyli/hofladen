@@ -25,7 +25,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
       {loaded ? (
         <div
           ref={ref}
-          className={`fixed top-0 right-0 h-full rounded w-48 p-5 bg-appGrey/90 shadow-2xl flex flex-col justify-center items-center z-20 transform transition-transform ${
+          className={`fixed top-0 right-0 h-1/2 rounded w-48 bg-white/90 shadow-2xl flex flex-col justify-end items-center z-20 transform transition-transform ${
             showMenu ? "" : "translate-x-80"
           } duration-300`}
         >
@@ -43,7 +43,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
                   onClick={() => setShowMenu(false)}
                   href={menuItem.link}
                   key={menuItemIndex}
-                  className="relative flex justify-center items-center h-14 bg-appGrey -ml-3 p-2 rounded m-2 text-xl font-bold text-appBlue border border-appBlue cursor-pointer"
+                  className="relative flex items-center h-14 bg-appGrey m-1 p-1 mt-4 text-appText cursor-pointer"
                   style={{
                     boxShadow: hoveredItemIndex === menuItemIndex ? "5px 5px 7px #0a11205f" : "3px 3px 5px #0a11205f",
                     transform: hoveredItemIndex === menuItemIndex ? "translate(-1px, -1px)" : "",
@@ -51,9 +51,9 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
                   onMouseEnter={() => setHoveredItemIndex(menuItemIndex)}
                   onMouseLeave={() => setHoveredItemIndex(null)}
                 >
-                  <span className="relative z-10">{menuItem.title}</span>
+                  <span className="relative bg-appGrey/90 w-full text-center p-2 rounded z-10">{menuItem.title}</span>
                   <span
-                    className="absolute inset-0 z-0 bg-center bg-cover"
+                    className="absolute inset-0 z-0 bg-center bg-cover rounded"
                     style={{
                       backgroundImage: `url('/images/cafe/${
                         menuItemIndex === 0
@@ -64,7 +64,7 @@ const Menu = forwardRef(({ handleMenuClick }, ref) => {
                           ? "38.png"
                           : "bg-appBlue"
                       }')`,
-                      opacity: 0.3,
+                      opacity: 0.9,
                     }}
                   />
                 </Link>
