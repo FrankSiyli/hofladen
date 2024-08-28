@@ -3,14 +3,21 @@ import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
 import Text from "@/app/components/Text/Text";
+import Head from "next/head";
 
 const Page = () => {
   return (
-    <div className="min-h-screen">
-      <Link href="/">
-        <ArrowLeftSvg />
-      </Link>
-      <div className="text-xl mt-40"><Text textValue={"2024"}></Text></div>
+    <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
+      <div className="min-h-screen">
+        <Link href="/">
+          <ArrowLeftSvg />
+        </Link>
+        <div className="text-xl mt-40">
+          <Text textValue={"2024"}></Text>
+        </div>
         <div className=" flex flex-col sm:flex-row justify-center gap-1 my-5 mx-auto z-10">
           <img
             className="max-h-[480px] h-auto object-contain px-5"
@@ -23,8 +30,8 @@ const Page = () => {
             alt="chor"
           />
         </div>
-
-    </div>
+      </div>
+    </>
   );
 };
 

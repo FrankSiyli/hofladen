@@ -2,10 +2,14 @@
 import React from "react";
 import ArrowLeftSvg from "../../components/buttons/svgCollection/ArrowLeftSvg";
 import Link from "next/link";
+import Head from "next/head";
 
 const Page = () => {
   return (
     <>
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <div className="flex min-h-screen w-full flex-col items-center">
         <Link href="/">
           <ArrowLeftSvg />
